@@ -66,7 +66,7 @@ public class HangmanGame {
             display.append("-"); // Fill the display with dashes
         }
 
-        System.out.println("Welcome to Hangman! Let's begin."); // Display a welcome message for the user
+        System.out.println("Welcome to Hangman! Let's start."); // Display a welcome message for the user
         Scanner scanner = new Scanner(System.in); // Create a Scanner object
 
         while (incorrectGuesses < MAX_GUESSES) { // Loop until the maximum number of incorrect guesses is hit by the user
@@ -74,7 +74,7 @@ public class HangmanGame {
             String input = scanner.next(); // Read the user's input value
 
             if (input.length() != 1 || !Character.isLetter(input.charAt(0))) {
-                System.out.println("Invalid input. Please enter a single letter only."); // Display an error message for invalid input or incorrect input
+                System.out.println("Invalid input. Please enter a single letter ONLY."); // Display an error message for invalid input or incorrect input
                 continue; // Skip to the next iteration of the loop
             }
 
@@ -101,7 +101,7 @@ public class HangmanGame {
             System.out.println("Guesses left in the game: "+ (MAX_GUESSES - incorrectGuesses)); // Display the remaining guesses for the user
 
             if (!display.toString().contains("-")) {
-                System.out.println("Congratulations! You guessed the word correctly. The game is now finished!"); // Display a victory message if the word is guessed correctly
+                System.out.println("Congratulations! You guessed the word correctly. The game is now done!"); // Display a victory message if the word is guessed correctly
                 return; // Exit the play method
             }
         }
