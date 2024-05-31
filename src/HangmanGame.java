@@ -115,3 +115,4 @@ public class HangmanGame {
     }
 
 }
+//Credit to Cyrus Chan, Mr. Tam, Ms. Nahar, Sander Day, and Samson Poon for helping me with this project
